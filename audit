@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+POSTMAN_KEY=
+STRINGS=
+
+./gradlew auditPostman -Dpostman.key=$POSTMAN_KEY -Dsensitive.strings=$STRINGS
