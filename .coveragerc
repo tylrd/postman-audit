@@ -1,0 +1,10 @@
+[run]
+branch = True
+source =
+    postman_audit
+omit =
+	venv/**/*
+
+[paths]
+source =
+    postman_audit
