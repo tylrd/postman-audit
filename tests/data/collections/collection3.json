@@ -1,0 +1,165 @@
+{
+  "collection": {
+    "variables": [],
+    "info": {
+      "name": "Sample Collection",
+      "_postman_id": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+      "description": "This is just a sample collection.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "This is a folder",
+        "description": "",
+        "item": [
+          {
+            "name": "Sample POST Request",
+            "request": {
+              "url": "echo.getpostman.com/post",
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\"data\": \"123\"}"
+              },
+              "description": "This is a sample POST Request"
+            },
+            "response": []
+          },
+          {
+            "name": "Sample POST Request",
+            "request": {
+              "url": "echo.getpostman.com/post",
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\"data\": \"123\"}"
+              },
+              "description": "This is a sample POST Request"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "This is a folder",
+        "description": "",
+        "item": [
+          {
+            "name": "Sample POST Request",
+            "request": {
+              "url": "echo.getpostman.com/post",
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\"data\": \"123\"}"
+              },
+              "description": "This is a sample POST Request"
+            },
+            "response": []
+          },
+          {
+            "name": "Sample POST Request",
+            "request": {
+              "url": "echo.getpostman.com/post",
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\"data\": \"123\"}"
+              },
+              "description": "This is a sample POST Request"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "This is a folder",
+        "description": "",
+        "item": [
+          {
+            "name": "Sample POST Request",
+            "request": {
+              "url": "echo.getpostman.com/post",
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\"data\": \"123\"}"
+              },
+              "description": "This is a sample POST Request"
+            },
+            "response": []
+          },
+          {
+            "name": "Sample POST Request",
+            "request": {
+              "url": "echo.getpostman.com/post",
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\"data\": \"123\"}"
+              },
+              "description": "This is a sample POST Request"
+            },
+            "response": []
+          }
+        ]
+      },
+      {
+        "name": "Sample GET Request",
+        "request": {
+          "url": "echo.getpostman.com/get",
+          "method": "GET",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": []
+          },
+          "description": "This is a sample GET Request"
+        },
+        "response": []
+      }
+    ]
+  }
+}

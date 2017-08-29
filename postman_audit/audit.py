@@ -7,9 +7,12 @@ logger = logging.getLogger(__name__)
 
 
 class Auditor:
-    def __init__(self, client):
+    def __init__(self, client, delay=5, lazy=False):
         self.client = client  # type: PostmanClient
         self.collections = []
+        self.delay = delay
+        if not lazy:
+            self.initialize()
 
     def initialize(self):
         data = self.client.get_collections()
@@ -19,7 +22,7 @@ class Auditor:
                     logger.info("Retrieving collection: %s", collection['name'])
                     collection_data = self.client.get_collection(collection['uid'])
                     self.collections.append(collection_data)
-                    time.sleep(5)
+                    time.sleep(self.delay)
         else:
             logger.info("Json response does not contain array of collections")
         return data

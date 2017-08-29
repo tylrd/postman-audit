@@ -1,0 +1,43 @@
+{
+  "collection": {
+    "variables": [],
+    "info": {
+      "name": "Sample Collection",
+      "_postman_id": "dac5eac9-148d-a32e-b76b-3edee9da28f7",
+      "description": "This is a sample collection that makes a tiny request to Postman Echo service to get the list of request headers sent by a HTTP client.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+      {
+        "id": "82ee981b-e19f-962a-401e-ea34ebfb4848",
+        "name": "Request Headers",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "type": "text/javascript",
+              "exec": "var responseJSON;\ntry {\n    tests[\"Body contains headers\"] = responseBody.has(\"headers\");\n    responseJSON = JSON.parse(responseBody);\n    tests[\"Header contains host\"] = \"host\" in responseJSON.headers;\n    tests[\"Header contains test parameter sent as part of request header\"] = \"my-sample-header\" in responseJSON.headers;\n}\ncatch (e) { }\n\n\n\n"
+            }
+          }
+        ],
+        "request": {
+          "url": "https://echo.getpostman.com/headers",
+          "method": "GET",
+          "header": [
+            {
+              "key": "my-sample-header",
+              "value": "Lorem ipsum dolor sit amet",
+              "description": ""
+            }
+          ],
+          "body": {
+            "mode": "formdata",
+            "formdata": []
+          },
+          "description": ""
+        },
+        "response": []
+      }
+    ]
+  }
+}

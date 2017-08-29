@@ -54,7 +54,8 @@ setup(
             'coverage',
             'mock',
             'flake8',
-            'tox'
+            'tox',
+            'HTTPretty'
         ],
     },
 
