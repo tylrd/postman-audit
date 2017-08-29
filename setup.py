@@ -4,7 +4,7 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
@@ -45,7 +45,7 @@ setup(
 
     packages=find_packages(exclude=['test']),
 
-    install_requires=['requests>=2'],
+    install_requires=['requests>=2', 'click>=4.0'],
 
     # $ pip install -e .[dev,test]
     extras_require={
@@ -64,7 +64,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'sample=sample:main',
+            'postman-audit=postman_audit.cli:run',
         ],
     },
 )
