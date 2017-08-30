@@ -3,7 +3,7 @@ branch = True
 source =
     postman_audit
 omit =
-	venv/**/*
+	tests/**/*
 
 [paths]
 source =

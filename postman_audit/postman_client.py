@@ -4,7 +4,9 @@ import requests
 class PostmanClient:
     BASE_URL = "https://api.getpostman.com"
 
-    def __init__(self, key):
+    def __init__(self, key=None):
+        if key is None:
+            raise PostmanApiException("No postman API key detected.")
         self.session = requests.Session()
         self.session.headers.update({"X-Api-Key": key})
 
@@ -22,3 +24,7 @@ class PostmanClient:
         response = self.session.put("%s/collections/%s" % (self.BASE_URL, uid), json=body)
         response.raise_for_status()
         return response.json()
+
+
+class PostmanApiException(Exception):
+    pass
